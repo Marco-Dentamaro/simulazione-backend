@@ -1,0 +1,16 @@
+.sfondo{
+    background-image: linear-gradient(rgba(23,23,23,0.6), rgba(23,23,23,0.8)), url('/media/motta.webp');
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.titoloh1{
+    font-size: 130px;
+    text-shadow: 4px 4px 8px black;
+    color: white;
+}
+
+.logo{
+    width: 60px;
+}
