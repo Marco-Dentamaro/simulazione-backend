@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
@@ -31,6 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/chi-siamo">Chi siamo</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sala-trofei">Sala trofei</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -53,26 +59,23 @@
     </nav>
 
 
-    <div class="container-fluid bg-success  vh-100">
+    <div class="container-fluid sfondoStadium text-white  min-vh-100">
         <div class="row">
             <div class="col-12">
-                <h1>Chi siamo</h1>
+                <h1 class="titoloh1">Rosa prima squadra</h1>
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row align-items-center justify-content-center">
             @foreach ($players as $player)
-                <div class="col-12 col-md-3">
-                    <div class="card">
-                        <img src="{{$player['img']}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{$player['name']}}</h5>
-                            <p class="card-text fw-bold">{{$player['ruolo']}}</p>
-                            <p class="card-text">{{$player['description']}}.</p>
-
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="col-md-5 col-12">
+                    <img class="fotoPlayer" src="{{$player['img']}}" alt="">
+                </div>
+                <div class="col-md-3 col-12">
+                    <h1 class="titoloh1">{{$player['name']}}</h5>
+                            <p class="card-text fw-bold fs-1">{{$player['ruolo']}}</p>
+                            <p class="card-text fs-4">{{$player['description']}}.</p>
+                            <a href="#" class="btn btn-outline-danger">Statistiche</a>
                 </div>
             @endforeach
         </div>

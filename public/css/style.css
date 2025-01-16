@@ -1,3 +1,7 @@
+*{
+    font-family: "Bebas Neue", serif;
+}
+
 .sfondo{
     background-image: linear-gradient(rgba(23,23,23,0.6), rgba(23,23,23,0.8)), url('/media/motta.webp');
     background-size: cover;
@@ -13,4 +17,31 @@
 
 .logo{
     width: 60px;
+}
+
+.trofeoLogo{
+    height: 90px;
+}
+
+.sfondoSala{
+    background-image: linear-gradient(rgba(23,23,23,0.6), rgba(23,23,23,0.8)), url('/media/sala.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sfondoStadium{
+    background-image: linear-gradient(rgba(23,23,23,0.6), rgba(23,23,23,0.8)), url('/media/stadium.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fotoPlayer{
+    height: 400px;
+    transition: 0.5s;
+}
+
+.fotoPlayer:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
